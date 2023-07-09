@@ -1,54 +1,29 @@
+import React from "react";
+import { Form, Input, Row, Col, Button } from "antd";
 
-import React from 'react'
- import { Form, Input, Row, Col, Button } from "antd";
-
- import { Typography, Box, Link, } from "@mui/material";
+import { Typography, Box, Link } from "@mui/material";
 import useStyles from "./style";
 
-
 const Level1page2 = () => {
-  
   const classes = useStyles();
-  
-    return (
-      <div className={classes.body}>
-        <Box className={classes.NameTag}>
-     
-       
-     <div className={classes.BackButton}>
-     </div>
- 
 
-     <div className={classes.HomeButton}>
-     </div>
+  return (
+    <div className={classes.body}>
+      <Box className={classes.NameTag}>
+        <div className={classes.BackButton}></div>
 
-     <div className={classes.SettingButton}>
-     </div>
-     </Box>
-     <div className={classes.BoardButton}>
-     </div>
-     <div className={classes.boxContainer}> </div>  {/*  Space */}
-     <div className={classes.HappyButton}>
-     </div>
-   
- 
-     <div className={classes.LoveButton}>
-     </div>
-     <div className={classes.AngryButton}>
-     </div>
-     <div className={classes.SadButton}>
-     </div>
-         
-      
-        
-       
+        <div className={classes.HomeButton}></div>
 
+        <div className={classes.SettingButton}></div>
+      </Box>
+      <div className={classes.BoardButton}></div>
+      <div className={classes.boxContainer}> </div> {/*  Space */}
+      <div className={classes.HappyButton}></div>
+      <div className={classes.LoveButton}></div>
+      <div className={classes.AngryButton}></div>
+      <div className={classes.SadButton}></div>
+    </div>
+  );
+};
 
-
-      </div>
-    );
-  };
-  
-
-
-export default Level1page2
+export default Level1page2;
