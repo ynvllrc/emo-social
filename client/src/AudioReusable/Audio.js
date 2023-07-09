@@ -4,7 +4,7 @@ const Audio = (props) => {
   const { audioRef, audioUrl } = props;
   return (
     <div>
-      <audio ref={audioRef} src={audioUrl} />
+      <audio ref={audioRef} src={audioUrl} loop />
     </div>
   );
 };
