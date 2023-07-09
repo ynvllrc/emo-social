@@ -1,21 +1,30 @@
-import React from "react";
+import React, { useRef, useContext, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import { Form, Input, Row, Col, Button } from "antd";
-import { Typography, Box, Link } from "@mui/material";
+import { Box } from "@mui/material";
 import useStyles from "./style";
+import { AudioContext } from "../../Context/AudioContext";
 
 const Loading = () => {
+  const { setIsPlaying } = useContext(AudioContext);
   const classes = useStyles();
   const history = useNavigate();
 
   const handlePlay = () => {
     history("/character/");
+    setIsPlaying(true);
     console.log("Play");
   };
 
   return (
     <div className={classes.body}>
-      <Box className={classes.PlayButtons} onClick={handlePlay}></Box>
+      <div style={{marginTop: "250px"}}>
+        <img
+          src="./Loading/Play.png"
+          onClick={handlePlay}
+          alt="Play"
+          style={{ height: "10%", width: "15%" }}
+        />
+      </div>
     </div>
   );
 };

@@ -1,8 +1,6 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useContext, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 // import { Form, Input, Row, Col, Button } from "antd";
-
-import { Typography, Box, Link, Button } from "@mui/material";
 import useStyles from "./style";
 
 const Character = () => {

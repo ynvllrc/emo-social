@@ -23,22 +23,6 @@ const useStyles = makeStyles(() => ({
     marginBlockStart: "20vh",
     marginLeft: "85vh",
     height: "65vh",
-    [theme.breakpoints.up("md")]: {
-      width: "400px",
-    },
-    [theme.breakpoints.down("md")]: {
-      width: "80%",
-      display: "flex",
-      zIndex: 1,
-      marginBlockStart: "20vh",
-      marginBlockEnd: "-100px",
-      marginLeft: "19vh",
-      backgroundImage: "url(././Loading/Play.png)",
-      backgroundRepeat: "no-repeat",
-      backgroundSize: "100px",
-      backgroundPosition: "center",
-      alignItems: "center",
-    },
   },
 }));
 

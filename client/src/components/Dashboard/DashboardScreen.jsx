@@ -1,6 +1,5 @@
 import React from "react";
 import { Form, Input, Row, Col, Button } from "react";
-
 import { Typography, Box, Link } from "@mui/material";
 import useStyles from "././style";
 
@@ -35,7 +34,14 @@ const Dashboard = () => {
             style={{ height: "10%", width: "15%" }}
           />
         </div>
-        <div style={{display: "flex", flexDirection: "row", justifyContent: "center", gap: "50px"}}>
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "row",
+            justifyContent: "center",
+            gap: "50px",
+          }}
+        >
           <img
             src="./Story.png"
             alt="Story"
