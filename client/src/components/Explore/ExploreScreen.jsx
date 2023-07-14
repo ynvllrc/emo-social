@@ -66,20 +66,30 @@ const Explore = () => {
         }}
       >
         <img
+              src="./Prev.png"
+              alt="Previous"
+              style={{ height: "10%", width: "10%" }}
+            />
+        <img
           src="./Guess1.png"
-          alt="Story"
+          alt="Guess"
           style={{ height: "20%", width: "20%" }}
         />
         <img
           src="./Behavior1.png"
-          alt="Story"
+          alt="Behavior"
           style={{ height: "20%", width: "20%" }}
         />
         <img
           src="./Good1.png"
-          alt="Story"
+          alt="Good"
           style={{ height: "20%", width: "20%" }}
         />
+         <img
+              src="./Next.png"
+              alt="Next"
+              style={{ height: "10%", width: "10%", position:"center" }}
+            />
       </div>
     </div>
   </div>
