@@ -12,15 +12,16 @@ const Dashboard = () => {
         style={{
           display: "flex",
           flexDirection: "column",
-        }}
+                 }}
       >
         <div
           style={{
             display: "flex",
             flexDirection: "row",
             alignItems: "center",
-            justifyContent: "space-between",
-            margin: "5px",
+            justifyContent: "flex-start",
+            marginTop: "-110px",
+                
           }}
         >
           <img
@@ -28,6 +29,26 @@ const Dashboard = () => {
             alt="Back"
             style={{ height: "10%", width: "10%" }}
           />
+           <img
+            src="./Home.png"
+            alt="Home"
+           style={{ height: "10%", width: "10%" }}
+          />
+        </div>
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "row",
+            alignItems: "center",
+            justifyContent: "flex-end",
+            marginTop: "-110px",
+                
+          }}
+        >  <img
+        src="./Home.png"
+        alt="Home"
+       style={{ height: "10%", width: "10%",visibility:"hidden" }}
+      />
           <img
             src="./Settings.png"
             alt="Settings"
@@ -40,6 +61,7 @@ const Dashboard = () => {
             flexDirection: "row",
             justifyContent: "center",
             gap: "50px",
+            margin:"5Spx",
           }}
         >
           <img

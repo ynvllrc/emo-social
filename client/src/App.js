@@ -13,26 +13,26 @@ import Level1page3 from "./components/Level1.page3/Level1.page3Screen";
 import Level1page4 from "./components/Level1.page4/Level1.page4Screen";
 import Level1page5 from "./components/Level1.page5/Level1.page5Screen";
 import { AudioContext } from "./Context/AudioContext";
-import audioUrl from "./Assets/music.mp3";
-import Audio from "./AudioReusable/Audio";
+// import audioUrl from "./Assets/music.mp3";
+// import Audio from "./AudioReusable/Audio";
 
 function App() {
   const audioRef = useRef(null);
   const { isPlaying } = useContext(AudioContext);
 
-  useEffect(() => {
-    const audioElement = audioRef.current;
+  // useEffect(() => {
+  //   const audioElement = audioRef.current;
 
-    if (isPlaying) {
-      audioElement.play();
-    } else {
-      audioElement.pause();
-    }
-  }, [isPlaying]);
+  //   if (isPlaying) {
+  //     audioElement.play();
+  //   } else {
+  //     audioElement.pause();
+  //   }
+  // }, [isPlaying]);
 
   return (
     <div className="App">
-      <Audio audioRef={audioRef} audioUrl={audioUrl} />
+      {/* <Audio audioRef={audioRef} audioUrl={audioUrl} /> */}
       <Routes>
         <Route path="/" element={<Loading />} />
         <Route path="/character" element={<Character />} />
