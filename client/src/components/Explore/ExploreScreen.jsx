@@ -5,9 +5,13 @@ import { Typography, Box, Link } from "@mui/material";
 import useStyles from "././style";
 
 const Explore = () => {
+
   const classes = useStyles();
 
+
+
   return (
+
     <div className={classes.body}>
       <div
         style={{
@@ -106,5 +110,6 @@ const Explore = () => {
     </div>
   );
 };
+
 
 export default Explore;

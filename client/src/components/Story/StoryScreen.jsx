@@ -9,6 +9,7 @@ const Story = () => {
   const classes = useStyles();
 
   return (
+
     <div className={classes.body}>
       <div
         style={{
@@ -107,5 +108,8 @@ const Story = () => {
     </div>
   );
 };
+     
+          
+
 
 export default Story;
