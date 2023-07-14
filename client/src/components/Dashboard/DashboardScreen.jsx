@@ -20,39 +20,47 @@ const Dashboard = () => {
             flexDirection: "row",
             alignItems: "center",
             justifyContent: "flex-start",
-            marginTop: "-110px",
+            marginTop: "-80px",
+                
+          }}
+        >
+          <div style={{
+            marginLeft: "-40px",
+            marginTop: "-30px",
                 
           }}
         >
           <img
             src="./Back.png"
             alt="Back"
-            style={{ height: "10%", width: "10%" }}
+            style={{ height: "30%", width: "30%" }}
+            
           />
+          
            <img
             src="./Home.png"
             alt="Home"
-           style={{ height: "10%", width: "10%" }}
+            
+           style={{ height: "25%", width: "30%"   }}
           />
+        </div>
         </div>
         <div
           style={{
             display: "flex",
             flexDirection: "row",
             alignItems: "center",
-            justifyContent: "flex-end",
-            marginTop: "-110px",
+           
+            marginTop: "-80px",
+            marginLeft: "90%",
                 
           }}
-        >  <img
-        src="./Home.png"
-        alt="Home"
-       style={{ height: "10%", width: "10%",visibility:"hidden" }}
-      />
+        >
+
           <img
             src="./Settings.png"
             alt="Settings"
-            style={{ height: "10%", width: "15%" }}
+            style={{ height: "90%", width: "95%" }}
           />
         </div>
         <div
@@ -61,7 +69,8 @@ const Dashboard = () => {
             flexDirection: "row",
             justifyContent: "center",
             gap: "50px",
-            margin:"5Spx",
+       
+            marginTop: "10%",
           }}
         >
           <img
