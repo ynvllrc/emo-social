@@ -17,7 +17,7 @@ const Loading = () => {
 
   return (
     <div className={classes.body}>
-      <div style={{marginTop: "250px"}}>
+      <div style={{ marginTop: "250px" }}>
         <img
           src="./Loading/Play.png"
           onClick={handlePlay}

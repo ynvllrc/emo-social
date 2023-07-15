@@ -13,7 +13,7 @@ const Level1page5 = () => {
         style={{
           display: "flex",
           flexDirection: "column",
-                 }}
+        }}
       >
         <div
           style={{
@@ -22,42 +22,37 @@ const Level1page5 = () => {
             alignItems: "center",
             justifyContent: "flex-start",
             marginTop: "20px",
-                
           }}
         >
-          <div style={{
-            marginLeft: "-40px",
-            marginTop: "-30px",
-                
-          }}
-        >
-          <img
-            src="./Back.png"
-            alt="Back"
-            style={{ height: "30%", width: "30%" }}
-            
-          />
-          
-           <img
-            src="./Home.png"
-            alt="Home"
-            
-           style={{ height: "25%", width: "30%"   }}
-          />
-        </div>
+          <div
+            style={{
+              marginLeft: "-40px",
+              marginTop: "-30px",
+            }}
+          >
+            <img
+              src="./Back.png"
+              alt="Back"
+              style={{ height: "30%", width: "30%" }}
+            />
+
+            <img
+              src="./Home.png"
+              alt="Home"
+              style={{ height: "25%", width: "30%" }}
+            />
+          </div>
         </div>
         <div
           style={{
             display: "flex",
             flexDirection: "row",
             alignItems: "center",
-           
+
             marginTop: "-80px",
             marginLeft: "90%",
-                
           }}
         >
-
           <img
             src="./Settings.png"
             alt="Settings"
@@ -71,33 +66,30 @@ const Level1page5 = () => {
             justifyContent: "center",
             gap: "20px",
             marginTop: "30%",
-            marginLeft:"8%",
+            marginLeft: "8%",
           }}
         >
-             <img
+          <img
             src="./happy.png"
             alt="Happy"
-          
-            style={{ height: "13%", width: "13%"}}
+            style={{ height: "13%", width: "13%" }}
           />
           <img
-              src="./love.png"
+            src="./love.png"
             alt="Love"
-            style={{ height: "13%", width: "13%"}}
+            style={{ height: "13%", width: "13%" }}
           />
           <img
-               src="./angry.png"
+            src="./angry.png"
             alt="Angry"
-            style={{ height: "13%", width: "13%"}}
+            style={{ height: "13%", width: "13%" }}
           />
           <img
-              src="./sad.png"
+            src="./sad.png"
             alt="Sad"
-            style={{ height: "13%", width: "13%"}}
+            style={{ height: "13%", width: "13%" }}
           />
-            
         </div>
-      
       </div>
     </div>
   );
