@@ -9,6 +9,7 @@ import Explore from './components/Explore/ExploreScreen';
 import Guess from './components/Guess/GuessScreen';
 import GuessLevel1 from './components/GuessLevel/Level1';
 import { AudioContext } from './Context/AudioContext';
+import Story1 from './components/Story/Story1';
 // import audioUrl from "./Assets/music.mp3";
 // import Audio from "./AudioReusable/Audio";
 
@@ -37,6 +38,7 @@ function App() {
         <Route path='/Explore' element={<Explore />} />
         <Route path='/Guess' element={<Guess />} />
         <Route path='/guess-emotion-level-1' element={<GuessLevel1 />} />
+        <Route path='/Story1' element={<Story1 />} />
       </Routes>
     </div>
   );

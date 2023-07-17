@@ -1,0 +1,26 @@
+body {
+  font-family: sans-serif;
+}
+
+.speech {
+  width: 100%;
+  margin: 0 60px;
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+}
+
+.group {
+  margin: 20px 0;
+}
+
+button {
+  width: 100%;
+  display: block;
+  padding: 10px 22px;
+  color: rgb(10, 10, 10);
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+  background-color: rgb(277, 240, 219);
+}

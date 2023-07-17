@@ -1,11 +1,14 @@
 import React from "react";
-import { Form, Input, Row, Col, Button } from "react";
-
-import { Typography, Box, Link } from "@mui/material";
+import { useNavigate } from "react-router-dom";
 import useStyles from "././style";
 
 const Story = () => {
   const classes = useStyles();
+  const history = useNavigate()
+
+  const handleTalkingWithFriends = () => {
+    history('/Story1')
+  }
 
   return (
     <div className={classes.body}>
@@ -75,6 +78,7 @@ const Story = () => {
             style={{ height: "10%", width: "10%", marginTop: "5%" }}
           />
           <img
+            onClick={() => handleTalkingWithFriends()}
             src="./Talking_with_friends.png"
             alt="Friends"
             style={{ height: "20%", width: "20%" }}

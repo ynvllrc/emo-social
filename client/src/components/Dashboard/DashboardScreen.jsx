@@ -1,10 +1,22 @@
 import React from "react";
-import { Form, Input, Row, Col, Button } from "react";
-import { Typography, Box, Link } from "@mui/material";
+import { useNavigate } from "react-router-dom";
 import useStyles from "././style";
 
 const Dashboard = () => {
   const classes = useStyles();
+  const history = useNavigate()
+
+  const handleStory = () => {
+    history('/Story/');
+  };
+
+  const handleExploreGames = () => {
+    history('/Explore/');
+  };
+
+  const handleBack = () => {
+    history('/');
+  };
 
   return (
     <div className={classes.body}>
@@ -30,11 +42,11 @@ const Dashboard = () => {
             }}
           >
             <img
+              onClick={() => handleBack()}
               src="./Back.png"
               alt="Back"
               style={{ height: "30%", width: "30%" }}
             />
-
             <img
               src="./Home.png"
               alt="Home"
@@ -69,17 +81,19 @@ const Dashboard = () => {
           }}
         >
           <img
+            onClick={() => handleStory()}
             src="./Story.png"
             alt="Story"
             style={{ height: "20%", width: "20%" }}
           />
           <img
-            src="./Daily.png"
+            onClick={() => handleExploreGames()}
+            src="./Explore.png"
             alt="Story"
             style={{ height: "20%", width: "20%" }}
           />
           <img
-            src="./Explore.png"
+            src="./Daily.png"
             alt="Story"
             style={{ height: "20%", width: "20%" }}
           />
