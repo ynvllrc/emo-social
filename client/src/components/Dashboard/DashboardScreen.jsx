@@ -4,18 +4,18 @@ import useStyles from "././style";
 
 const Dashboard = () => {
   const classes = useStyles();
-  const history = useNavigate()
+  const history = useNavigate();
 
   const handleStory = () => {
-    history('/Story/');
+    history("/Story/");
   };
 
   const handleExploreGames = () => {
-    history('/Explore/');
+    history("/Explore/");
   };
 
   const handleBack = () => {
-    history('/');
+    history("/");
   };
 
   return (

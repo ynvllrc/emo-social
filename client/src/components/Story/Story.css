@@ -14,6 +14,22 @@ body {
   margin: 20px 0;
 }
 
+.group-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.group-item-two {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 100vh;
+  /* align-content: flex-start; */
+  /* gap: 20px; */
+}
+
 button {
   width: 100%;
   display: block;
@@ -23,4 +39,9 @@ button {
   cursor: pointer;
   outline: none;
   background-color: rgb(277, 240, 219);
+}
+
+p {
+  color: white;
+  background-color: black;
 }

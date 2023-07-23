@@ -4,11 +4,11 @@ import useStyles from "././style";
 
 const Story = () => {
   const classes = useStyles();
-  const history = useNavigate()
+  const history = useNavigate();
 
   const handleTalkingWithFriends = () => {
-    history('/Story1')
-  }
+    history("/Story1");
+  };
 
   return (
     <div className={classes.body}>

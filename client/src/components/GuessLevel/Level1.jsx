@@ -1,7 +1,4 @@
 import React, { useState } from "react";
-import { Form, Input, Row, Col, Button } from "antd";
-
-import { Typography, Box, Link } from "@mui/material";
 import useStyles from "./style";
 
 const GuessLevel1 = () => {
@@ -69,16 +66,16 @@ const GuessLevel1 = () => {
   ];
 
   const optionClicked = (isCorrect) => {
-    console.log(isCorrect)
-    if(isCorrect) {
-      setScore(score + 1)
+    console.log(isCorrect);
+    if (isCorrect) {
+      setScore(score + 1);
     }
     if (currentQuestion + 1 < questions.length) {
-      setCurrentQuestion(currentQuestion + 1)
+      setCurrentQuestion(currentQuestion + 1);
     } else {
       setShowFinalResults(true);
     }
-  }
+  };
 
   return (
     <div className={classes.body}>
@@ -133,96 +130,102 @@ const GuessLevel1 = () => {
           />
         </div>
         {showFinalResults ? (
-          <div style={{
-            display: "flex",
-            flexDirection: "column",
-            justifyContent: "center",
-            alignItems: "center",
-            width: "60%",
-            height: "10%",
-            backgroundColor: "lightgray",
-            marginLeft: "20%",
-            borderRadius: "10%",
-            borderWidth: "10%",
-            borderColor: "black",
-            marginTop: "3%",
-            borderBottom: `2px solid #777777`
-           
-            
-          }}>
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "center",
+              alignItems: "center",
+              width: "60%",
+              height: "10%",
+              backgroundColor: "lightgray",
+              marginLeft: "20%",
+              borderRadius: "10%",
+              borderWidth: "10%",
+              borderColor: "black",
+              marginTop: "3%",
+              borderBottom: `2px solid #777777`,
+            }}
+          >
             <h5 style={{ marginBottom: "0" }}>{`SUCCESSFUL ${score}/5`}</h5>
-            <div style={{
-            display: "flex",
-            flexDirection: "row",
-            justifyContent: "center",
-            alignItems: "center",
-            width: "60%",
-            gap: "10%",
-            marginLeft: "1%",
-            marginTop: "1%",
-          }}>
-            <img
-              src="./Starfill.png"
-              alt="Starnofill"
-              style={{ height: "15%", width: "15%" }}
-            />
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "row",
+                justifyContent: "center",
+                alignItems: "center",
+                width: "60%",
+                gap: "10%",
+                marginLeft: "1%",
+                marginTop: "1%",
+              }}
+            >
               <img
-              src="./Starfill.png"
-              alt="Starnofill"
-              style={{ height: "15%", width: "15%" }}
-            />
+                src="./Starfill.png"
+                alt="Starnofill"
+                style={{ height: "15%", width: "15%" }}
+              />
               <img
-              src="./Starnofill.png"
-              alt="Starnofill"
-              style={{ height: "15%", width: "15%" }}
-            />
+                src="./Starfill.png"
+                alt="Starnofill"
+                style={{ height: "15%", width: "15%" }}
+              />
+              <img
+                src="./Starnofill.png"
+                alt="Starnofill"
+                style={{ height: "15%", width: "15%" }}
+              />
             </div>
-            <div style={{
-            display: "flex",
-            flexDirection: "column",
-            justifyContent: "center",
-            alignItems: "center",
-            width: "100%",
-            gap: "10%",
-            marginLeft: "1%",
-            marginTop: "-5%",
-          }}>
-            <h5 style={{ marginBottom: "0" }}> New Achievement Unlock – Guess Emotion Easy</h5>
-            <img
-              src="./Achievements.png"
-              alt="Achievements"
-              style={{ height: "12%", width: "12%" }}
-            />
-            </div>
- <div style={{
-            display: "flex",
-            flexDirection: "row",
-            justifyContent: "center",
-            alignItems: "center",
-            width: "60%",
-            height: "10%",
-            marginLeft: "1%",
-            marginTop: "-10%",
-           gap: "0%",
-          }}>
-            <img
-              src="./Proceedtolevelmenu.png"
-              alt="Proceedtolevelmenu"
-              style={{ height: "60%", width: "50%" }}
-            />
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "center",
+                alignItems: "center",
+                width: "100%",
+                gap: "10%",
+                marginLeft: "1%",
+                marginTop: "-5%",
+              }}
+            >
+              <h5 style={{ marginBottom: "0" }}>
+                 New Achievement Unlock – Guess Emotion Easy
+              </h5>
               <img
-              src="./Regame.png"
-              alt="Regame"
-              style={{ height: "60%", width: "55%" }}
-            />
-              <img
-              src="./Proceedtonextlevelbutton.png"
-              alt="Proceedtonextlevelbutton"
-              style={{ height: "60%", width: "50%" }}
-            />
+                src="./Achievements.png"
+                alt="Achievements"
+                style={{ height: "12%", width: "12%" }}
+              />
             </div>
-      
-           
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "row",
+                justifyContent: "center",
+                alignItems: "center",
+                width: "60%",
+                height: "10%",
+                marginLeft: "1%",
+                marginTop: "-10%",
+                gap: "0%",
+              }}
+            >
+              <img
+                src="./Proceedtolevelmenu.png"
+                alt="Proceedtolevelmenu"
+                style={{ height: "60%", width: "50%" }}
+              />
+              <img
+                src="./Regame.png"
+                alt="Regame"
+                style={{ height: "60%", width: "55%" }}
+              />
+              <img
+                src="./Proceedtonextlevelbutton.png"
+                alt="Proceedtonextlevelbutton"
+                style={{ height: "60%", width: "50%" }}
+              />
+            </div>
           </div>
         ) : (
           <>
@@ -235,7 +238,7 @@ const GuessLevel1 = () => {
                 marginTop: "-5%",
               }}
             >
-              <h2 style={{ marginBottom: "0"}}>{`Level ${
+              <h2 style={{ marginBottom: "0" }}>{`Level ${
                 currentQuestion + 1
               }`}</h2>
               <h5 style={{ marginTop: "0" }}>{`Page ${
@@ -243,7 +246,11 @@ const GuessLevel1 = () => {
               }/5`}</h5>
             </div>
             <div>
-              <img style={{ height: "20%", width: "20%"}} src={questions[currentQuestion].main}/>
+              <img
+                style={{ height: "20%", width: "20%" }}
+                src={questions[currentQuestion].main}
+                alt="current question"
+              />
             </div>
             <div
               style={{

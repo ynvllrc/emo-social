@@ -1,4 +1,5 @@
-import React, { useRef, useContext, useEffect } from 'react';
+import React from 'react';
+// , { useRef, useContext, useEffect }
 import './App.css';
 import { Routes, Route } from 'react-router-dom';
 import Character from './components/Character/CharacterScreen';
@@ -8,14 +9,14 @@ import Story from './components/Story/StoryScreen';
 import Explore from './components/Explore/ExploreScreen';
 import Guess from './components/Guess/GuessScreen';
 import GuessLevel1 from './components/GuessLevel/Level1';
-import { AudioContext } from './Context/AudioContext';
+// import { AudioContext } from "./Context/AudioContext";
 import Story1 from './components/Story/Story1';
 // import audioUrl from "./Assets/music.mp3";
 // import Audio from "./AudioReusable/Audio";
 
 function App() {
-  const audioRef = useRef(null);
-  const { isPlaying } = useContext(AudioContext);
+  // const audioRef = useRef(null);
+  // const { isPlaying } = useContext(AudioContext);
 
   // useEffect(() => {
   //   const audioElement = audioRef.current;
